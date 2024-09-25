@@ -16,7 +16,7 @@ class LandingScreen extends StatelessWidget {
           children: [
             GestureDetector(
               onTap: () {
-                 Navigator.pushReplacementNamed(context, '/login');
+                 Navigator.pushNamed(context, '/login');
               },
               child: Container(
                 width: double.infinity,
@@ -40,7 +40,7 @@ class LandingScreen extends StatelessWidget {
             const SizedBox(height: 20),
             GestureDetector(
               onTap: () {
-                 Navigator.pushReplacementNamed(context, '/home');
+                 Navigator.pushNamed(context, '/form');
               },
               child: Container(
                 width: double.infinity,

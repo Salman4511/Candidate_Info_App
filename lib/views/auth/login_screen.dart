@@ -75,7 +75,7 @@ class LoginScreen extends StatelessWidget {
                             .read<AuthController>()
                             .signIn(email, password);
                         if (context.read<AuthController>().user != null) {
-                          Navigator.pushReplacementNamed(context, '/home');
+                          Navigator.pushReplacementNamed(context, '/candidateList');
                         } else {
                           showError(
                               'Login failed. Please check your credentials.');
